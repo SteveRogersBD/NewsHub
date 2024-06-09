@@ -3,6 +3,7 @@ package com.example.newshub;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.graphics.Color;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -14,6 +15,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.newshub.Adapters.VIewPagerAdapter;
 import com.example.newshub.databinding.ActivityMainBinding;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.squareup.picasso.Picasso;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -33,6 +36,16 @@ public class MainActivity extends AppCompatActivity {
         VIewPagerAdapter va = new VIewPagerAdapter(getSupportFragmentManager());
         binding.viewPager.setAdapter(va);
         binding.tab.setupWithViewPager(binding.viewPager);
+
+        FirebaseUser user = auth.getCurrentUser();
+        if(user!=null)
+        {
+            Uri photoUri = user.getPhotoUrl();
+            if(photoUri!=null)
+            {
+                Picasso.get().load(photoUri).into(binding.profileImage);
+            }
+        }
 
 
     }
