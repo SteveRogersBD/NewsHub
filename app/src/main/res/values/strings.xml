@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">NewsHub</string>
+    <string name="default_web_client_id">928484964942-4emicoet4fps0h0egtim0i4ci15jv25n.apps.googleusercontent.com</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

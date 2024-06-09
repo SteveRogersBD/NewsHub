@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "928484964942",
+    "project_id": "newshub-acd1d",
+    "storage_bucket": "newshub-acd1d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:928484964942:android:3c9baefeafcc741826611f",
+        "android_client_info": {
+          "package_name": "com.example.newshub"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "928484964942-4emicoet4fps0h0egtim0i4ci15jv25n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBL1zxjiErnxzoN89jZl3YE4oUi0fa-ffs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "928484964942-4emicoet4fps0h0egtim0i4ci15jv25n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
