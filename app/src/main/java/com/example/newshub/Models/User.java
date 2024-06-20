@@ -1,4 +1,4 @@
-package com.example.newshub;
+package com.example.newshub.Models;
 
 public class User {
     private String name;
